@@ -69,7 +69,7 @@ def take_order():
                 print("Invalid choice. Please select a valid menu number.")
                 continue
 
-# Item add code
+# Item appending list code
             ordered_items.append(item)
             total_price += price
             print(f"Added {item} to your order for {price} pesos.")
@@ -101,13 +101,13 @@ def process_payment(total_price):
         except ValueError:
             print("Invalid input. Please enter a valid amount.")
 
-# Main Function
+# Main Function Code
 def main():
     print("Welcome to the Food Ordering System!")
     ordered_items, total_price = take_order()
     display_bill(ordered_items, total_price)
     process_payment(total_price) 
 
-
+# Code to run the system
 if __name__ == "__main__":
     main()
